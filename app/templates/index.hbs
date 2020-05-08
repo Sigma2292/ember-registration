@@ -1,0 +1,34 @@
+<html>
+  <head>
+<meta name="google-signin-client_id" content="46220498430-i6rlj84lcr57cau3nq50hicml3mhl09a.apps.googleusercontent.com">
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+
+
+</head>
+<body>
+<div class="jumbo">
+  <div class= "real"></div>
+  <img src="../assets/images/access.png" alt="image" width="500" height="350">
+  <h1>Real Estate Investing Information</h1>
+ <h1>That matters to you.</h1>
+ <p>Limited to the San Francisco Bay Area-Join our BETA!</p>
+
+<div id="profileinfo"></div><br>
+<div  data-onsuccess="onSignIn" class="g-signin2" onclick="javascript:location.href='signup'"></div><br>
+
+</div>
+<div><LinkTo @route="signup">Signin</LinkTo></div>
+
+</body>
+<script>
+  function onSignIn(googleUser) {
+  var profile = googleUser.getBasicProfile();
+  console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+  console.log('Name: ' + profile.getName());
+  console.log('Image URL: ' + profile.getImageUrl());
+  console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+}
+</script>
+
+
+</html>

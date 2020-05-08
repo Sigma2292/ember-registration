@@ -1,0 +1,27 @@
+<html>
+<head>
+<style>
+  .center{
+    text-align: center;
+  }
+</style>
+</head>
+
+
+<body>
+
+<div class="center">
+ <form id="signup" method="post">
+      <p>NAME</p>
+  <input name="username" id="name" type="text" autocomplete="name"><br>
+ <p>EMAIL ADDRESS</p>
+        <input name="email" id="email" type="text" autocomplete="username email"><br>
+  <p>PHONE NUMBER</p>    
+          <input type="number" id="number" name="number" placeholder="phone number" required><br><br>
+        
+  <LinkTo @route="thankyou" class="button" style="font-family:'SF-Compact-Display-Regular'">Signin</LinkTo>
+  </form>
+</div>
+
+</body>
+</html>
